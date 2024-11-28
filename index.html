@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Inversión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card bg-dark text-white">
+            <div class="card-header text-center">
+                <h1>Calculadora Inversión</h1>
+            </div>
+            <div class="card-body">
+                <form id="investment-form">
+                    <div class="mb-3">
+                        <label for="amount" class="form-label">Monto de Inversión</label>
+                        <input type="number" id="amount" class="form-control" min="100" step="50" value="100">
+                        <small class="form-text text-muted">El monto mínimo es de $100 y aumenta en incrementos de $50.</small>
+                        <p id="conversion-label" class="mt-2">Equivalente en GTQ: Q800.00</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="duration" class="form-label">Plazo (Meses)</label>
+                        <select id="duration" class="form-select">
+                            <option value="3">3 meses</option>
+                            <option value="6">6 meses</option>
+                            <option value="9">9 meses</option>
+                            <option value="12">12 meses</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rate" class="form-label">Tipo de Beneficio</label>
+                        <select id="rate" class="form-select">
+                            <option value="0.08">Mínimo (8%)</option>
+                            <option value="0.09">Medio (9%)</option>
+                            <option value="0.1">Máximo (10%)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="currency" class="form-label">Mostrar cálculos en:</label>
+                        <select id="currency" class="form-select">
+                            <option value="usd">Dólares</option>
+                            <option value="gtq">Quetzales</option>
+                        </select>
+                    </div>
+                    <button type="button" id="calculate-btn" class="btn btn-outline-primary w-100 mb-2">Calcular</button>
+                    <button type="button" id="reset-btn" class="btn btn-outline-secondary w-100 mb-2">Limpiar</button>
+                </form>
+                <button id="to-top-btn" class="btn btn-outline-light w-100 mt-3 d-none">Ir al Inicio</button>
+                <div id="results" class="mt-4 d-none">
+                    <h4>Resultados</h4>
+                    <div id="results-details"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-5 text-white">
+        <p>@Ale Apps Consulting 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

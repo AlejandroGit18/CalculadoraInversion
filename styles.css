@@ -1,0 +1,39 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #444;
+}
+
+.form-text {
+    font-size: 0.9em;
+}
+
+#conversion-label {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+#results {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#results h4 {
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 1.2em;
+    background-color: #1e1e1e;
+    padding: 10px 0;
+}
